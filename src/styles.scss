@@ -1,0 +1,10 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.table th { border-top: none; }
+
+.dark-theme {
+  background-color: #36393f;
+  color: #cfd0d1;
+}
