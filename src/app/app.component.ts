@@ -14,7 +14,7 @@ export class AppComponent {
   public plotPlan = PlotPlanCalculator.emptyPlotPlan
   public isCalculating = false;
 
-  private _selectedCapacityDenominator = 'GB';
+  private _selectedCapacityDenominator = 'TB';
   private worker: Worker | null = null;
   private readonly plotPlanCalculator: PlotPlanCalculator = new PlotPlanCalculator()
   private readonly debouncedPlotPlanUpdate: () => void;
