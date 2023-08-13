@@ -108,7 +108,7 @@ export class AppComponent {
     if (typeof Worker === 'undefined') {
       return
     }
-    this.worker = new Worker('./app.worker', { type: 'module' })
+    this.worker = new Worker(new URL('./app.worker', import.meta.url), { type: 'module' })
     this.worker.onmessage = ({ data }) => {
       this.isCalculating = false
       this.plotPlan = data
